@@ -1,0 +1,26 @@
+{
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"font_size": 15,
+	"font_face": "JetBrains Mono",
+	"save_on_focus_lost": true,
+	"highlight_line": true,
+	"caret_style": "phase",
+	"line_padding_top": 1,
+	"line_padding_bottom": 1,
+
+	"theme": "auto",
+
+	"caret_extra_bottom": 1,
+	"caret_extra_width": 1,
+	"spell_check": false, // if you are working with non-English text pretty often
+	"scroll_past_end": true,
+	"highlight_modified_tabs": true,
+    "trim_trailing_white_space_on_save": "not_on_caret", // that is more smart behavior than just "all" ;-)
+	"hardware_acceleration": "opengl", // By default UI will be calculated on your CPU with horrible screen tearing!
+
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+}
