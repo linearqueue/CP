@@ -9,8 +9,13 @@ int n, k;
 
 // One thing at a time
 void solve() {
-  multiset<int> mt;
 
+  // s0: sabse phle mai multiset bnaunga fir usme
+  // s1: element insert krunga
+  // s2: agr multiset ki size > k hota hai to i-k element remove krunga
+  // s3: agr multiset ki size ==k hota to first element mera smallest hoga
+
+  multiset<int> mt;
   for (int i = 0; i < n; ++i) {
     mt.insert(arr[i]);
     if ((i - k) >= 0) mt.erase(mt.find(arr[i - k]));  // mt.size()>k
