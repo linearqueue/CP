@@ -4,14 +4,11 @@
 using namespace std;
 #define endl "\n"
 #define int long long
+int arr[100100];
+int n, k;
 
 // One thing at a time
 void solve() {
-  int n, k;
-  cin >> n >> k;
-  int arr[n];
-  for (int i = 0; i < n; i++) cin >> arr[i];
-
   multiset<int> mt;
 
   for (int i = 0; i < n; ++i) {
@@ -27,6 +24,9 @@ signed main() {
   ios_base::sync_with_stdio(0);
   cin.tie(0);
   cout.tie(0);
+
+  cin >> n >> k;
+  for (int i = 0; i < n; i++) cin >> arr[i];
 
   int t = 1;
   // cin >> t;
