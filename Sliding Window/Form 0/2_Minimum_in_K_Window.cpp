@@ -5,6 +5,11 @@ using namespace std;
 
 // One thing at a time
 
+// S0: ek DS bnana hai jo insert(), erase(), getMin(), support kre
+// s1: insert krne se phle hm jo bhi element bda hai x se usko remove bacause x ke rhte ko bhi Minimum nhi ho sakta
+//s2: erase(), remove krte time agr last element remove nhi hua uper wale function se to woh ab first element pe aa gya rhega and agr exist krta rhega to usko remove kr denge 
+//s3: getMin(), hmara front element hmesha Minimum hoga
+
 struct monotone_deque {
   deque<int> dq;
 
@@ -19,7 +24,7 @@ struct monotone_deque {
     if (dq.front() == x) dq.pop_front();
   }
 
-  int getMax() { return dq.front(); }
+  int getMin() { return dq.front(); }
 };
 void solve() {
   int n, k;
@@ -34,7 +39,7 @@ void solve() {
       mt.erase(arr[i - k]);
     }
     if (i >= (k - 1)) {
-      cout << mt.getMax() << " ";
+      cout << mt.getMin() << " ";
     }
   }
 }
