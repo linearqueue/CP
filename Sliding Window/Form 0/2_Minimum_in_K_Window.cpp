@@ -2,12 +2,10 @@
 using namespace std;
 #define endl "\n"
 #define int long long
+int arr[100100];
+int n, k;
 
 // One thing at a time
-
-int n, k;
-int arr[100100];
-
 // Creating dataStructure
 struct monotone_deque {
   deque<int> dq;
